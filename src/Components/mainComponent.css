@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #F86338;
+	--mainColorLight: #f9a38b;
+	--secondaryColor: #de0c1e;
+	--textColor: rgb(11, 11, 11);
+}
+
+header {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	color: var(--textColor);
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--mainColor);
+	text-decoration: none;
+
+}
+
+nav a:first-of-type {
+	margin-left: 0;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+	font-weight: 900;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColorLight);
+		transition: 1s;
+		transform: translateX(-90vh);
+		color: aliceblue;
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+
+}
+
+div .iconBox {
+	margin: 1rem;
+	display: flex;
+	justify-Content: space-between;
+	width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+	div .iconBox {
+		width: 7rem;
+	}
+}
+
+div .logoContainer {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+}
+div .productTitle {
+	clear: both;
+	height: 2rem;
+	width: 10rem;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+	font-family: DM Sans;
+}
+
+div .priceValue {
+	font-family: DM Sans;
+	font-weight: 500;
+	color: var(--mainColor);
+}
+
+div .priceHeaderContainer {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 5px;
+}
+
+div .categoryList {
+	font-family: DM Sans;
+	color: var(--mainColor);
+	font-size: larger;
+	font-style: normal;
+	text-decoration: none;
+}
+
+div .sortingContainer {
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+div .productSorting {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center
+}
+
+div .sortByText {
+	font-family: DM Sans;
+	font-size: 1rem;
+}
+
+div .showingResultTxt {
+	font-family: DM Sans;
+	color: lightgray
+}
+
+div .recommendedItemContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div .footerContainer {
+	width: 100%;
+	height: 25rem;
+	background-color: var(--mainColor);
+}
+
+div .footerLogoContainer {
+	padding-top: 3rem;
+	display: flex;
+}
+
+div .footerContentContainer {
+	padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	div .logoContainer {
+		background-color: var(--mainColor);
+	}
+}

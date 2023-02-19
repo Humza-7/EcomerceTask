@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+div .headingAndBannerContainer {
+    margin-top: 2px;
+}
+
+div .headingContainer {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+div .imageContainer {
+    height: 20rem;
+
+
+}
+
+div .recommenedProductList {
+    width: 100%;
+    background-color: aqua;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    div .headingContainer {
+        height: 10rem;
+    }
+
+    div .imageContainer {
+        height: 12rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    div .recommenedProductList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
